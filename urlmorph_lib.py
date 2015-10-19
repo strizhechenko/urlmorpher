@@ -1,6 +1,6 @@
 # coding:utf-8
 
-__author__ = 'oleg'
+__author__ = 'Oleg Strizhechenko <oleg@carbonsoft.ru>'
 
 import re
 import urllib
