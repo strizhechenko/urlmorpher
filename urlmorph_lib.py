@@ -171,7 +171,7 @@ def remove_bad_symbols_parts(url_set_in):
     out = url_set_in.copy()
     for url in filter(lambda u: type(u) == unicode, url_set_in):
         if url.find(u'Р') >= 0:
-            out.add(remove_bad_symbol_all(url, u'Р'))
+            out.add(remove_bad_symbol_all(url, u'Р')) # procfs have a little 'bug' with Р
             out.remove(url)
     return out
 
